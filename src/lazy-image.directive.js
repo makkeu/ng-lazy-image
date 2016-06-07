@@ -224,7 +224,7 @@ angular.module('afkl.lazyImage')
 
                 };
 
-                var _onViewChangeDebounced = srcSetService.debounce(_onViewChange, 300);
+                var _onViewChangeDebounced = _onViewChange;
 
                 // EVENT: RESIZE THROTTLED
                 var _onResize = function () {
